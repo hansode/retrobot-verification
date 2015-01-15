@@ -21,15 +21,21 @@ su - ${user} -c "bash -ex" <<'EOS'
 EOS
 
 su - ${user} -c "bash -ex" <<'EOS'
-  echo 'export PATH="${HOME}/.rbenv/bin:$PATH"' >> ${HOME}/.bash_profile
-  echo 'eval "$(rbenv init -)"' >> ${HOME}/.bash_profile
+  if ! egrep -q rbenv ${HOME}/.bash_profile; then
+   {
+    echo 'export PATH="${HOME}/.rbenv/bin:$PATH"'
+    echo 'eval "$(rbenv init -)"'
+   } >> ${HOME}/.bash_profile
+  fi
 EOS
 
 su - ${user} -c "bash -ex" <<'EOS'
   version=2.2.0
 
   rbenv install --list
-  rbenv install ${version}
+  rbenv version | egrep -w -q ${version} || {
+    rbenv install ${version}
+  }
   rbenv versions
 
   rbenv version
@@ -42,7 +48,7 @@ su - ${user} -c "bash -ex" <<'EOS'
 EOS
 
 su - ${user} -c "bash -ex" <<'EOS'
-  if ! [[ -d cd retrobot ]]; then
+  if ! [[ -d retrobot ]]; then
     git clone https://github.com/mirakui/retrobot.git
   fi
   cd retrobot
