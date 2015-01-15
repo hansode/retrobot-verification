@@ -31,7 +31,7 @@ $ unzip /vagrant/tweets.zip -d tweets
 $ cp retrobot.example.yml retrobot.yml
 $ vi retrobot.yml
 
-$ bin/retrobot
+$ LC_ALL=ja_JP.UTF-8 ./bin/retrobot -c ./retrobot.yml
 ```
 
 License
