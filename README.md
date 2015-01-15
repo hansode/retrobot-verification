@@ -19,6 +19,21 @@ Getting Started
 $ make up
 ```
 
+```
+$ vagrant ssh
+$ cd retrobot
+```
+
+```
+$ rbenv exec bundle exec get-twitter-oauth-token
+
+$ unzip /vagrant/tweets.zip -d tweets
+$ cp retrobot.example.yml retrobot.yml
+$ vi retrobot.yml
+
+$ bin/retrobot
+```
+
 License
 -------
 
