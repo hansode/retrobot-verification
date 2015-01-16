@@ -3,6 +3,10 @@ retrobot-verification
 
 [retrobot](https://github.com/mirakui/retrobot) verification box
 
++ [@hansode_retro](https://twitter.com/hansode_retro)
++ [@hansode_retro2](https://twitter.com/hansode_retro2)
++ [@hansode_retro3](https://twitter.com/hansode_retro3)
+
 Requirements
 ------------
 
