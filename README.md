@@ -3,9 +3,9 @@ retrobot-verification
 
 [retrobot](https://github.com/mirakui/retrobot) verification box
 
-+ [@hansode_retro](https://twitter.com/hansode_retro)
-+ [@hansode_retro2](https://twitter.com/hansode_retro2)
-+ [@hansode_retro3](https://twitter.com/hansode_retro3)
++ [@hansode_retro](https://twitter.com/hansode_retro) - What did [@hansode](https://twitter.com/hansode) do 1 year ago today?
++ [@hansode_retro2](https://twitter.com/hansode_retro2) - What did [@hansode](https://twitter.com/hansode) do 2 years ago today?
++ [@hansode_retro3](https://twitter.com/hansode_retro3) - What did [@hansode](https://twitter.com/hansode) do 3 years ago today?
 
 Requirements
 ------------
