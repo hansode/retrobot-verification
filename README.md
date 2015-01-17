@@ -38,6 +38,13 @@ $ vi retrobot.yml
 $ ./bin/retrobot -c ./retrobot.yml
 ```
 
+References
+----------
+
++ [mirakui/retrobot](https://github.com/mirakui/retrobot)
++ [1年前の自分と暮らす - 昼メシ物語](http://blog.mirakui.com/entry/2014/01/25/174428)
++ [自分の1年前のツイートを見るretrobotをいれてみる - pixyzehn blog](http://rikei-webmemo.hateblo.jp/entry/2014/03/15/103512)
+
 License
 -------
 
