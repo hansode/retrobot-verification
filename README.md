@@ -19,23 +19,69 @@ Requirements
 Getting Started
 ---------------
 
+Clone a repository.
+
+```
+$ git clone https://github.com/hansode/retrobot-verification.git
+$ cd retrobot-verification
+```
+
+Download [tweets.zip](https://blog.twitter.com/2012/your-twitter-archive) and deploy to `retrobot-verification`.
+
+```
+$ ls -l tweets.zip
+```
+
+Create a VM.
+
 ```
 $ make up
 ```
 
+Connect to the VM.
+
 ```
 $ vagrant ssh
+```
+
+Change into retrobot project directory. `/home/vagrant/retrobot`
+
+```
 $ cd retrobot
 ```
 
+Get token/secret pair of Twitter OAuth.
+
 ```
 $ rbenv exec bundle exec get-twitter-oauth-token
+```
 
+Unzip tweets.zip.
+
+```
 $ unzip /vagrant/tweets.zip -d tweets
-$ cp retrobot.example.yml retrobot.yml
-$ vi retrobot.yml
+```
 
+Configure retrobot.
+
+```
+$ cp retrobot.example.yml retrobot.yml
+$ cp retrobot.example.yml retrobot2.yml
+$ cp retrobot.example.yml retrobot3.yml
+```
+
+```
+$ vi retrobot.yml
+$ vi retrobot2.yml
+$ vi retrobot3.yml
+```
+
+Run retrobot.
+
+```
 $ ./bin/retrobot -c ./retrobot.yml
+$ ./bin/retrobot -c ./retrobot2.yml
+$ ./bin/retrobot -c ./retrobot3.yml
 ```
 
 References
