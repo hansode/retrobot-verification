@@ -40,7 +40,7 @@ EOS
 # ruby
 
 su - ${user} -c "bash -ex" <<'EOS'
-  version=2.2.0
+  version=2.1.5
 
   rbenv install --list
   rbenv version | egrep -w -q ${version} || {
