@@ -68,22 +68,16 @@ Configure retrobot.
 
 ```
 $ cp retrobot.example.yml retrobot.yml
-$ cp retrobot.example.yml retrobot2.yml
-$ cp retrobot.example.yml retrobot3.yml
 ```
 
 ```
 $ vi retrobot.yml
-$ vi retrobot2.yml
-$ vi retrobot3.yml
 ```
 
 Run retrobot.
 
 ```
 $ ./bin/retrobot -c ./retrobot.yml
-$ ./bin/retrobot -c ./retrobot2.yml
-$ ./bin/retrobot -c ./retrobot3.yml
 ```
 
 References
